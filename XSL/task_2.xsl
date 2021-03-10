@@ -75,19 +75,19 @@
 
         <xsl:template match="графика">
             <svg>
-                <xsl:apply-templates />
+                <xsl:apply-templates select="@*|node()" />
             </svg>
         </xsl:template>
 
         <xsl:template match="графика/эллипс">
             <ellipse>
-                <xsl:apply-templates />
+                <xsl:apply-templates select="@*|node()" />
             </ellipse>
         </xsl:template>
 
         <xsl:template match="root">
             <html>
-                <xsl:apply-templates />
+                <xsl:apply-templates select="@*|node()" />
             </html>
         </xsl:template>
 
