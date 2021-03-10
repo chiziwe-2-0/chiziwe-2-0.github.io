@@ -3,8 +3,8 @@
 
 ## Задания с огоньком
 ### 1. XSL
-[Само задание тут](https://kodaktor.ru/g/xsl_intro)
+[Задания тут](https://kodaktor.ru/g/xsl_intro)
 
-[Github's Raw Code](https://github.com/ShumilinPavel/ITMO-labs/tree/main/XSL-INTRO/task1)
+[Github's Raw Code](https://github.com/chiziwe-2-0/chiziwe-2-0.github.io/tree/main/XSL)
 
-[Результат](https://shumilinpavel.github.io/ITMO-labs/XSL-INTRO/task1/source.xml)  
+[Результат №1](https://chiziwe-2-0.github.io/XSL/task_1.xml)  
