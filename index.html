@@ -3,6 +3,75 @@
 <body>
 <h1>Страница на Github Pages</h1>
 <h4 id="author" title="GossJS">Никита Олимпиев</h4>
-<p>Здесь будут работы.</p>
+<p>Здесь мои работы.</p>
 </body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Olimpiev's page</title>
+    <meta author="Ateev Kirill" charset="utf-8" />
+  </head>
+  <body>
+    <h1>Fetch exercise (Массив ответов будет в консоли и в кнопке)</h1>
+    <button>Поехали</button>
+    <ol id="values">
+      <li>10</li>
+      <li>20</li>
+      <li>30</li>
+    </ol>
+    <ol id="urls">
+      <li>https://kodaktor.ru/api/m/</li>
+      <li>https://kodaktor.ru/api/MS2/</li>
+      <li>https://kodaktor.ru/api/MS3/</li>
+    </ol>
+
+    <script>
+      const values = document
+        .getElementById("values")
+        .getElementsByTagName("*");
+      const URLs = document.getElementById("urls").getElementsByTagName("*");
+
+      let valuesArray = [];
+      let URLsArray = [];
+      let resultArray = [];
+      let path = "";
+
+      Array.from(values).forEach(function (elem) {
+        valuesArray.push(parseInt(elem.textContent));
+      });
+      Array.from(URLs).forEach(function (elem) {
+        URLsArray.push(elem.textContent);
+      });
+
+      document
+        .querySelector("button")
+        .addEventListener("click", async ({ target: t }) => {
+          for (let i = 1; i <= URLsArray.length; i++) {
+            if (i === 1) path = URLsArray[i-1] + valuesArray[i-1].toString();
+
+            result = await fetch(path)
+              .then((x) => x.text())
+              .then((x) =>
+                resultArray.push(parseInt(x.match(/([1-9])\w+/g)[0]))
+              )
+              .then((x) => {
+                path =
+                  URLsArray[i] +
+                  valuesArray[i] +
+                  "/" +
+                  resultArray[resultArray.length - 1].toString();
+              });
+          }
+          console.log(resultArray);
+          t.textContent = `Результат: ${resultArray}`;
+          resultArray = [];
+          path = "";
+        });
+    </script>
+  </body>
 </html>
