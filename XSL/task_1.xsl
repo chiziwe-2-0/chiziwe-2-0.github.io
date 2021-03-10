@@ -16,11 +16,15 @@
         </xsl:template>
 
     <xsl:template match="операнд">
-        <mi><xsl:value-of select="." /></mi>
+        <mi>
+            <xsl:apply-templates />
+        </mi>
     </xsl:template>
 
     <xsl:template match="оператор">
-        <mo><xsl:value-of select="." /></mo>
+        <mo>
+            <xsl:apply-templates />
+        </mo>
     </xsl:template>
 
     <xsl:template match="корень">
