@@ -30,11 +30,6 @@
             </ellipse>
         </xsl:template>
 
-
-        <xsl:comment>
-            Attributes:
-        </xsl:comment>
-
         <xsl:template match="/root/графика/@ширина">
             <xsl:attribute name="width">
                 <xsl:value-of select="." />
