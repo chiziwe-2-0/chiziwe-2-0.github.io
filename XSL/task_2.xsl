@@ -3,7 +3,7 @@
         <xsl:template match="/">
             <html>
                 <head>
-                    <title>Olimpiev's Task 2 (XSL)</title>
+                    <title>1Olimpiev's Task 2 (XSL)</title>
                 </head>
                 <body>
                     <h4 id="author" title="GossJS" style="display: none">Никита Олимпиев</h4>
