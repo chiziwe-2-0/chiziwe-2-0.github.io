@@ -12,6 +12,12 @@
             </html>
         </xsl:template>
 
+<xsl:template match="@*|node()">
+<xsl:copy>
+<xsl:apply-templates select="@*|node()"/>
+</xsl:copy>
+</xsl:template>
+
         <xsl:template match="/root/графика/@ширина">
             <xsl:attribute name="width">
                 <xsl:value-of select="." />
@@ -66,11 +72,6 @@
             </xsl:attribute>
         </xsl:template> 
 
-        <xsl:template match="root">
-            <html>
-                <xsl:apply-templates />
-            </html>
-        </xsl:template>
 
         <xsl:template match="графика">
             <svg>
@@ -82,6 +83,12 @@
             <ellipse>
                 <xsl:apply-templates />
             </ellipse>
+        </xsl:template>
+
+        <xsl:template match="root">
+            <html>
+                <xsl:apply-templates />
+            </html>
         </xsl:template>
 
     </xsl:stylesheet>
