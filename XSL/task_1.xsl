@@ -1,24 +1,17 @@
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-
         <xsl:template match="/">
             <html>
                 <head>
-                    <title>Olimpiev's Task 1 (XSL)</title>
-
                     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
                     <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
                 </head>
-
                 <body>
-                    <h4 id="author" title="GossJS" style="display:none">Никита Олимпиев</h4>
-
+                    <h4 id="author" title="GossJS">Никита Олимпиев</h4>
                     <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                         <xsl:apply-templates />
                     </math>
-
                 </body>
             </html>
-        
         </xsl:template>
 
     <xsl:template match="операнд">
