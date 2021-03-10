@@ -55,13 +55,13 @@
         </xsl:template> 
 
         <xsl:template match="/root/графика/эллипс/@rx">
-            <xsl:attribute name="cy">
+            <xsl:attribute name="rx">
                 <xsl:value-of select="." />
             </xsl:attribute>
         </xsl:template> 
 
         <xsl:template match="/root/графика/эллипс/@ry">
-            <xsl:attribute name="cy">
+            <xsl:attribute name="ry">
                 <xsl:value-of select="." />
             </xsl:attribute>
         </xsl:template> 
