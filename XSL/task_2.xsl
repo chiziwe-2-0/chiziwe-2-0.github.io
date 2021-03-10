@@ -7,8 +7,7 @@
                 </head>
                 <body>
                     <h4 id="author" title="GossJS" style="display: none">Никита Олимпиев</h4>
-                        <xsl:apply-templates />
-                    </math>
+                    <xsl:apply-templates />
                 </body>
             </html>
         </xsl:template>
