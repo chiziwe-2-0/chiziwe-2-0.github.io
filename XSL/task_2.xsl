@@ -3,7 +3,7 @@
         <xsl:template match="/">
             <html>
                 <head>
-                    <title>TestOlimpiev's Task 2 (XSL)</title>
+                    <title>TeOlimpiev's Task 2 (XSL)</title>
                 </head>
                 <body>
                     <h4 id="author" title="GossJS" style="display: none">Никита Олимпиев</h4>
@@ -11,8 +11,6 @@
                 </body>
             </html>
         </xsl:template>
-
-
 
         <xsl:template match="/root/графика/@ширина">
             <xsl:attribute name="width">
@@ -68,6 +66,12 @@
             </xsl:attribute>
         </xsl:template> 
 
+
+        <xsl:template match="@*|node()">
+            <xsl:copy>
+                <xsl:apply-templates select="@*|node()"/>
+            </xsl:copy>
+        </xsl:template>
 
         <xsl:template match="графика">
             <svg>
