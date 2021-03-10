@@ -12,6 +12,12 @@
             </html>
         </xsl:template>
 
+        <xsl:template match="root">
+            <html>
+                <xsl:apply-templates />
+            </html>
+        </xsl:template>
+
         <xsl:template match="графика">
             <svg>
                 <xsl:apply-templates />
@@ -23,13 +29,6 @@
                 <xsl:apply-templates />
             </ellipse>
         </xsl:template>
-
-        <xsl:template match="root">
-            <html>
-                <xsl:apply-templates />
-            </html>
-        </xsl:template>
-
 
         <xsl:template match="/root/графика/@ширина">
             <xsl:attribute name="width">
@@ -57,6 +56,30 @@
 
         <xsl:template match="/root/графика/эллипс/@ширина-ободка">
             <xsl:attribute name="stroke-width">
+                <xsl:value-of select="." />
+            </xsl:attribute>
+        </xsl:template> 
+
+        <xsl:template match="/root/графика/эллипс/@cx">
+            <xsl:attribute name="cx">
+                <xsl:value-of select="." />
+            </xsl:attribute>
+        </xsl:template> 
+
+        <xsl:template match="/root/графика/эллипс/@cy">
+            <xsl:attribute name="cy">
+                <xsl:value-of select="." />
+            </xsl:attribute>
+        </xsl:template> 
+
+        <xsl:template match="/root/графика/эллипс/@rx">
+            <xsl:attribute name="cy">
+                <xsl:value-of select="." />
+            </xsl:attribute>
+        </xsl:template> 
+
+        <xsl:template match="/root/графика/эллипс/@ry">
+            <xsl:attribute name="cy">
                 <xsl:value-of select="." />
             </xsl:attribute>
         </xsl:template> 
