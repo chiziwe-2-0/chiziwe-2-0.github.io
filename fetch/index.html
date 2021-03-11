@@ -31,28 +31,19 @@
             .querySelector('button')
             .addEventListener('click',
             async ({ target: t }) => {
-    
                 t.textContent = '...';
-
-                const opt = { 
+                let result = [];
+                let opt = { 
                         headers: new Headers({
                             'Content-Type': 'application/json'
                         })}; 
-                
-                    let result = [];
-
-                    // здесь напишите код, последовательно отправляющий запросы
-                    // согласно спецификации kodaktor.ru/async_tasks
-
-                    for(var i in values) {
-                        let r =  await fetch(URLs[i]+values[i] + '/' + result[result.length - 1], opt).then(x =>x.json());
-                        result.push(r.result)
-                    }
-                    
-                    t.textContent = `Результат: ${result}`;
+                for(var i in values) {
+                    let r =  await fetch(URLs[i]+values[i] + '/' + result[result.length - 1], opt).then(x => x.json());
+                    result.push(r.result);
+                }                  
+                t.textContent = `Результат: ${result}`;
             }
         ); 
-
     </script>
   </body>
 </html>
