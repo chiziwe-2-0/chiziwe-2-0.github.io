@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Olimpiev's fetch task</title>
+  </head>
+
+  <body>
+    <h4 id="author" title="GossJS" style="display: none">Никита Олимпиев</h4>
+
+    <button>Поехали</button>
+        <ol id="values">
+        <li>10</li>
+        <li>20</li>
+        <li>30</li>
+    </ol>
+    <ol id="urls">
+        <li>https://kodaktor.ru/api/m/</li>
+        <li>https://kodaktor.ru/api/MS2/</li>
+        <li>https://kodaktor.ru/api/MS3/</li>
+    </ol>
+
+    <script>
+        const values = Array
+            .from(document.querySelectorAll('ol#values li'))
+            .map(item => item.innerHTML);
+        const URLs = Array
+            .from(document.querySelectorAll('ol#urls li'))
+            .map(item => item.innerHTML);
+
+        document
+            .querySelector('button')
+            .addEventListener('click',
+            async ({ target: t }) => {
+    
+                t.textContent = '...';
+
+                const opt = { 
+                        headers: new Headers({
+                            'Content-Type': 'application/json'
+                        })}; 
+                
+                    let result = [];
+
+                    // здесь напишите код, последовательно отправляющий запросы
+                    // согласно спецификации kodaktor.ru/async_tasks
+
+                    for(var i in values) {
+                        let r =  await fetch(URLs[i]+values[i] + '/' + result[result.length - 1], opt).then(x =>x.json());
+                        result.push(r.result)
+                    }
+                    
+                    t.textContent = `Результат: ${result}`;
+            }
+        ); 
+
+    </script>
+  </body>
+</html>
+
