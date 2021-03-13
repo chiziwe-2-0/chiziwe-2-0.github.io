@@ -8,5 +8,3 @@ const prot_names = [
     obj.prototype.prototype.name,
     obj.prototype.prototype.prototype.name,
 ];
-
-console.log(prot_names);
