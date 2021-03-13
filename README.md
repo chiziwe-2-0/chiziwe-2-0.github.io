@@ -11,6 +11,13 @@
 
 [Результат №2](https://chiziwe-2-0.github.io/XSL/task_2.xml)  
 
+### 2. func_007
+[Задание тут](https://kodaktor.ru/func_007)
+
+[Github's Code](https://github.com/chiziwe-2-0/chiziwe-2-0.github.io/tree/main/func_007)
+
+[Результат](https://chiziwe-2-0.github.io/func_007/)  
+
 ### 4. fetch
 [Задание тут](https://kodaktor.ru/async_tasks)
 
