@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head><script src="https://kodaktor.ru/j/out"></script>
+        <title>Olimpiev's FUNC-007</title>
+        <h4> Посчитать количество вызовов можно самостоятельно: </h4>
+    </head>
+ 
+    <body>
+        <h4 id="author" title="GossJS" style="display: none">Никита Олимпиев</h4>
+        
+        Введите a: <input id="a">
+        Введите b: <input id="b">
+        <button id="count_it">Посчитать</button>
+
+        <hr>
+        Количество вызовов mpy: 
+        <div id="mpy_result"></div>
+
+        <hr>
+
+        <script>{
+            const sec = a => 1 + a;
+            const add = (a, b) => (b === 0) ? a : sec(add(a, b - 1));
+            const mpy = (a, b) => (b === 1) ? a : add(a, mpy(a, b - 1));
+
+            //pwr:
+ 	        const pwr = (a, b) => (b === 1) ? a : (b === 0) ? 1 : mpy(a, pwr(a, b - 1));
+
+            function count() {
+                var a = document.getElementById('a').value;
+                var b = document.getElementById('b').value;
+
+                //количество вызовов mpy
+                let mpy_call = 0;
+
+                while ( b > 1 ) {                   
+                    mpy_call += a ** (b - 1);
+                    b--;
+                }
+
+                /**
+                При b > 1:
+                для mpy(a, b) генеририруется add_call = a * (b - 1) + 1 и sec_call = a * (b - 1)
+                **/
+
+                document.getElementById('mpy_result').innerHTML = mpy_call;
+
+            }
+            
+            document.getElementById('count_it').addEventListener('click', count);
+
+            Out.style.color='yellow';
+
+            var i = 1;
+            while( i < 10 ) {
+
+                var j = 0;
+                var innerLoopOK = true;
+
+                while( innerLoopOK ) {
+
+                    try {
+                        pwr(i, j);
+                    } 
+                    catch (e) {
+                        innerLoopOK = false;
+                        Out.log("Предельное значение (" + i + '^' + (j-1) + ') = ' + pwr(i, j-1));
+                        document.write('Предельная степень для ' + i);
+                        document.write( ': ' + j + '<br \/>');
+
+                        i++;
+                    }
+                    j++;
+                }
+            }
+    
+        }</script>
+    </body>
+</html>
