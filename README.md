@@ -18,6 +18,13 @@
 
 [Результат](https://chiziwe-2-0.github.io/func_007/)  
 
+### 3. proto_chain
+[Задание тут](https://kodaktor.ru/g/proto_chain)
+
+[Github's Code](https://github.com/chiziwe-2-0/chiziwe-2-0.github.io/tree/main/proto_chain)
+
+Результат: [ 'ECMAScript', 'JavaScript', 'LiveScript', 'Mocha' ]
+
 ### 4. fetch
 [Задание тут](https://kodaktor.ru/async_tasks)
 

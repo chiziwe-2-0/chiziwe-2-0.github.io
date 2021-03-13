@@ -1,0 +1,9 @@
+{
+  "name": "goss_proto",
+  "description":"Задание proto_chain по цепочке прототипов",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/GossJS/goss_proto.git",
+  "author": "gossoudarev <goss@itmo.ru>",
+  "license": "MIT"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "proto_chain",
+  "version": "1.0.0",
+  "description": "proto_chain task",
+  "main": "index.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "proto",
+    "chain",
+    "ITMO",
+    "task"
+  ],
+  "author": "Nikita Olimpiev",
+  "license": "ISC",
+  "dependencies": {
+    "goss_proto": "^1.0.0"
+  }
+}
