@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Babel Plugin</title>
+  </head>
+
+  <body>
+   <h4 id="author" title="GossJS" style="display: none">Олимпиев Никита</h4>
+
+   <script src="http://kodaktor.ru/j/dblttl"></script> 
+   <img src="http://kodaktor.ru/babel01.png" alt="babel" width="60%" height = "60%">
+     
+   <script src="http://kodaktor.ru/babel7.9.6.js"></script>  
+   <script src="http://kodaktor.ru/j/out"></script>
+
+   <script>
+      {
+       const code = 'const n = 1'
+       function myCustomPlugin(){
+         return{
+         	visitor: {
+          		Identifier(path){
+            		if(path.isIdentifier({ name: 'n' })){
+            			path.node.name = 'x';
+                }
+              }
+          }
+        }
+      }
+
+       Babel.registerPlugin('myplugin', myCustomPlugin);
+       const output = Babel.transform(code, {plugins: ['myplugin']});
+
+  		 console.log(output)
+  		 Out.log(output.code)
+      
+}
+   </script>   
+  </body>  
+</html>

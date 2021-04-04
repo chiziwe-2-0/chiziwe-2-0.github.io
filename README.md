@@ -1,5 +1,7 @@
 # ITMO.Tasks
-Исследование экосистем веб-языков и веб-технологий	
+Исследование экосистем веб-языков и веб-технологий
+
+Портфолио Олимпиева Н.В. P41072
 
 ## Задания с огоньком
 ### 1. XSL
@@ -31,3 +33,13 @@
 [Github's Code](https://github.com/chiziwe-2-0/chiziwe-2-0.github.io/tree/main/fetch)
 
 [Результат](https://chiziwe-2-0.github.io/fetch/)  
+
+
+## Задания дополнительные
+
+### babel01
+[Задание тут](https://kodaktor.ru/babel01)
+
+[Github's Code](https://github.com/chiziwe-2-0/chiziwe-2-0.github.io/tree/main/babel01)
+
+[Результат](https://chiziwe-2-0.github.io/babel01/)  
