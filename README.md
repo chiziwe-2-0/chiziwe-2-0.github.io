@@ -43,3 +43,7 @@
 [Github's Code](https://github.com/chiziwe-2-0/chiziwe-2-0.github.io/tree/main/babel01)
 
 [Результат](https://chiziwe-2-0.github.io/babel01/)  
+
+
+## Курсовая работа
+[Тестирование интерпретаторов Python для создания веб-приложений](https://drive.google.com/file/d/1QXOqBW_jjPM5Awrf31sU16xXAkl_Jgi_/view?usp=sharing)
