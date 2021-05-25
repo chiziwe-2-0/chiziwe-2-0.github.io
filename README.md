@@ -44,6 +44,12 @@
 
 [Результат](https://chiziwe-2-0.github.io/babel01/)  
 
+### Генерация кода
+[Задание тут](https://node-server.online/m/mod/forum/view.php?id=354)
+
+[Github's Code](https://github.com/chiziwe-2-0/chiziwe-2-0.github.io/tree/main/generate_code)
+
+Результат: const x = 764897 .toString(16); (babel)
 
 ## Курсовая работа
 [Тестирование интерпретаторов Python для создания веб-приложений](https://drive.google.com/file/d/1QXOqBW_jjPM5Awrf31sU16xXAkl_Jgi_/view?usp=sharing)
