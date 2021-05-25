@@ -51,5 +51,11 @@
 
 Результат: const x = 764897 .toString(16); (babel)
 
+### Прототип на React
+Задание:
+Создать прототип React-приложения, которое обращается к адресу https://kodaktor.ru/sleep?n=3 и показывает время, а пока запрос обрабатывается, показывать прогресс-бар.
+
+[Github's Code](https://github.com/chiziwe-2-0/chiziwe-2-0.github.io/tree/main/react)
+
 ## Курсовая работа
 [Тестирование интерпретаторов Python для создания веб-приложений](https://drive.google.com/file/d/1QXOqBW_jjPM5Awrf31sU16xXAkl_Jgi_/view?usp=sharing)

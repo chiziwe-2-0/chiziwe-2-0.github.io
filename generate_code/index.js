@@ -12,4 +12,3 @@ const { code } = generate(ast)
 console.log(code)
 })
 )
-e
