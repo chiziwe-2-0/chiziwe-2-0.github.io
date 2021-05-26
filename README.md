@@ -37,6 +37,9 @@
 ## Курсовая работа
 [Тестирование интерпретаторов Python для создания веб-приложений](https://drive.google.com/file/d/1QXOqBW_jjPM5Awrf31sU16xXAkl_Jgi_/view?usp=sharing)
 
+[Репозиторий FrameworkHist из курсовой](https://github.com/chiziwe-2-0/FrameworkHist)
+
+
 ## Прочие дополнительные задания
 
 ### babel01
